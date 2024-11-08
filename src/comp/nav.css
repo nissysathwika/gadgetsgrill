@@ -1,0 +1,204 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .top_header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #f6f7f8;
+}
+
+.header .top_header .icon {
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 19px;
+}
+
+.header .top_header .info p {
+    margin-left: 10px;
+    color: #8a8a8a;
+}
+
+.header .mid_header {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header .mid_header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.header .mid_header .search_box {
+    flex: 2; /* Allocate more space for the search box */
+    display: flex;
+    justify-content: center; /* Center the search box */
+    margin: 0 20px; /* Margin on sides */
+}
+
+.header .mid_header .search_box input {
+    padding: 10px;
+    background: #f6f7f8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%; /* Take full width */
+    max-width: 250px; /* Limit maximum width */
+    border: none;
+    outline: none;
+}
+
+.header .mid_header .search_box button {
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    background: #cd1e76;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: -4px; /* Overlap the button slightly with the input */
+}
+
+.header .mid_header .user {
+    display: flex;
+    align-items: center;
+}
+
+.header .mid_header .user .icon {
+    margin-right: 10px;
+}
+
+.header .mid_header .user .btn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header .last_header {
+    display: flex;
+    padding: 10px;
+    background: #232323;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .last_header .user_profile {
+    display: flex;
+    align-items: center;
+}
+
+.header .last_header .user_profile .icon {
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+.header .last_header .user_profile .info h2 {
+    color: white;
+}
+
+.header .last_header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .last_header .nav ul li {
+    margin-right: 20px;
+}
+
+.header .last_header .nav ul li .link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header .last_header .nav ul li .link:hover {
+    color: #cd1e76;
+}
+
+.header .last_header .offers {
+    background: linear-gradient(45deg, #cd1e76, #f06414);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.header .last_header .offers p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Media Queries */
+
+/* Mobile (Max 600px) */
+@media (max-width: 600px) {
+    .header .mid_header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header .mid_header .search_box {
+        margin: 10px 0; /* Add margin for spacing */
+        width: 100%; /* Full width */
+        justify-content: center; /* Center the search box */
+    }
+
+    .header .mid_header .search_box input {
+        width: 80%; /* Responsive input width */
+    }
+
+    .header .mid_header .search_box button {
+        width: 20%; /* Responsive button width */
+    }
+
+    .header .last_header {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .header .last_header .nav ul {
+        display: none; /* Hide the menu on small screens */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        text-align: center; /* Center align text */
+    }
+
+    .header .hamburger {
+        display: block; /* Show hamburger on mobile */
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .header .last_header.active .nav ul {
+        display: flex; /* Show when active */
+    }
+
+    .header .last_header .nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+}
+
+/* Tablet (Max 1024px) */
+@media (max-width: 1024px) {
+    .header .mid_header {
+        padding: 10px;
+    }
+}

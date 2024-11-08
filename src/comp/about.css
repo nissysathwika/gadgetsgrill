@@ -1,0 +1,88 @@
+.about {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+}
+
+.about-title {
+    text-align: center;
+    color: #2c3e50; /* Darker shade for a professional look */
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+h3 {
+    color: #2980b9; /* Brighter blue for headings */
+    border-bottom: 2px solid #2980b9; /* Match the heading color */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px; /* Slightly wider line */
+    background: #2980b9; /* Consistent with heading color */
+    margin-top: 5px;
+}
+
+.team-member {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #dcdcdc; /* Lighter border */
+    border-radius: 8px; /* More rounded corners */
+    background: #ecf0f1; /* Light grey background for team members */
+    transition: transform 0.2s, box-shadow 0.2s; /* Added shadow on hover */
+}
+
+.team-member:hover {
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover for depth */
+}
+
+.core-values ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 1rem;
+    background: #f9f9f9; /* Subtle background for list */
+    border-radius: 5px;
+}
+
+blockquote {
+    background: #e8f6f3; /* Light teal for contrast */
+    border-left: 5px solid #16a085; /* Teal border */
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem; /* Slightly larger for emphasis */
+    color: #333; /* Darker color for better readability */
+}
+
+.call-to-action a {
+    color: #e74c3c; /* Bright red for call to action */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.call-to-action a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}

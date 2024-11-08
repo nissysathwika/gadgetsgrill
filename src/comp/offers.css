@@ -1,0 +1,88 @@
+/* offers.css */
+
+/* Overall styles for the offers section */
+.offers {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading style */
+.offers h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark color for contrast */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the product list */
+.offers ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items */
+}
+
+/* Style for each product item */
+.offers li {
+  background-color: #fff; /* White background for product cards */
+  margin: 10px; /* Space around each card */
+  padding: 15px; /* Padding inside the card */
+  border: 1px solid #ddd; /* Light border around the card */
+  border-radius: 8px; /* Rounded corners for cards */
+  text-align: center; /* Center text */
+  width: 200px; /* Fixed width for product cards */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+/* Hover effect for product cards */
+.offers li:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Style for product titles */
+.offers h2 {
+  font-size: 1.2em; /* Font size for titles */
+  color: #555; /* Slightly lighter color for titles */
+  margin: 10px 0; /* Space above and below the title */
+}
+
+/* Style for image */
+.offers img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Style for price paragraphs */
+.offers p {
+  margin: 0px 0; /* Space around paragraphs */
+  color: grey; /* Gray color for text */
+}
+/* Pop-Up Style */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Success color */
+  color:beige;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other elements */
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Smooth appear/disappear */
+}
+
+/* Keyframes for the fade-in/out effect */
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
